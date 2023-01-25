@@ -1,5 +1,5 @@
 # Your Workflow name
-name: Deploy to 
+name: Deploy to render 
 
 # Run orkflow on every push to main branch 
 on:
