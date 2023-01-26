@@ -1,9 +1,9 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from typing import List
 
 # Declaring varibales for setup functions
 PROJECT_NAME = "housing-predictor"
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 AUTHOR = "Swinal"
 DESCRIPTION = "This is my first project"
 PACKAGES = ["housing"]
@@ -18,7 +18,7 @@ def get_requirements_list()->List[str]:
         contain name of libraries mentioned in requirements.txt file
     """
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
-        return requirement_file.readlines()
+        return requirement_file.readlines().remove("-e .")
 
 
 setup(
@@ -26,7 +26,7 @@ setup(
     version=VERSION,
     author=AUTHOR,
     description=DESCRIPTION,
-    packages=PACKAGES,
+    packages=find_packages(), # Where ever it is seeing __init__ it brings us as a package
     install_requires = get_requirements_list()
 )
 
