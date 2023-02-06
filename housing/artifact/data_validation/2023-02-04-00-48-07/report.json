@@ -1,0 +1,107 @@
+{
+      "version": "0.2.1",
+      "timestamp": "2023-02-04 00:48:23.064659",
+      "metrics": [
+            {
+                  "metric": "DatasetDriftMetric",
+                  "result": {
+                        "drift_share": 0.5,
+                        "number_of_columns": 10,
+                        "number_of_drifted_columns": 0,
+                        "share_of_drifted_columns": 0.0,
+                        "dataset_drift": false
+                  }
+            },
+            {
+                  "metric": "DataDriftTable",
+                  "result": {
+                        "number_of_columns": 10,
+                        "number_of_drifted_columns": 0,
+                        "share_of_drifted_columns": 0.0,
+                        "dataset_drift": false,
+                        "drift_by_columns": {
+                              "households": {
+                                    "column_name": "households",
+                                    "column_type": "num",
+                                    "stattest_name": "Wasserstein distance (normed)",
+                                    "drift_score": 0.035700151073703966,
+                                    "drift_detected": false,
+                                    "threshold": 0.1
+                              },
+                              "housing_median_age": {
+                                    "column_name": "housing_median_age",
+                                    "column_type": "num",
+                                    "stattest_name": "Wasserstein distance (normed)",
+                                    "drift_score": 0.012931712243276685,
+                                    "drift_detected": false,
+                                    "threshold": 0.1
+                              },
+                              "latitude": {
+                                    "column_name": "latitude",
+                                    "column_type": "num",
+                                    "stattest_name": "Wasserstein distance (normed)",
+                                    "drift_score": 0.019211368524658438,
+                                    "drift_detected": false,
+                                    "threshold": 0.1
+                              },
+                              "longitude": {
+                                    "column_name": "longitude",
+                                    "column_type": "num",
+                                    "stattest_name": "Wasserstein distance (normed)",
+                                    "drift_score": 0.017067342089880935,
+                                    "drift_detected": false,
+                                    "threshold": 0.1
+                              },
+                              "median_house_value": {
+                                    "column_name": "median_house_value",
+                                    "column_type": "num",
+                                    "stattest_name": "Wasserstein distance (normed)",
+                                    "drift_score": 0.02228974409485374,
+                                    "drift_detected": false,
+                                    "threshold": 0.1
+                              },
+                              "median_income": {
+                                    "column_name": "median_income",
+                                    "column_type": "num",
+                                    "stattest_name": "Wasserstein distance (normed)",
+                                    "drift_score": 0.014875291032601044,
+                                    "drift_detected": false,
+                                    "threshold": 0.1
+                              },
+                              "population": {
+                                    "column_name": "population",
+                                    "column_type": "num",
+                                    "stattest_name": "Wasserstein distance (normed)",
+                                    "drift_score": 0.027367276747562647,
+                                    "drift_detected": false,
+                                    "threshold": 0.1
+                              },
+                              "total_bedrooms": {
+                                    "column_name": "total_bedrooms",
+                                    "column_type": "num",
+                                    "stattest_name": "Wasserstein distance (normed)",
+                                    "drift_score": 0.03767772655978998,
+                                    "drift_detected": false,
+                                    "threshold": 0.1
+                              },
+                              "total_rooms": {
+                                    "column_name": "total_rooms",
+                                    "column_type": "num",
+                                    "stattest_name": "Wasserstein distance (normed)",
+                                    "drift_score": 0.03322548046220158,
+                                    "drift_detected": false,
+                                    "threshold": 0.1
+                              },
+                              "ocean_proximity": {
+                                    "column_name": "ocean_proximity",
+                                    "column_type": "cat",
+                                    "stattest_name": "Jensen-Shannon distance",
+                                    "drift_score": 0.013652047934422188,
+                                    "drift_detected": false,
+                                    "threshold": 0.1
+                              }
+                        }
+                  }
+            }
+      ]
+}

@@ -6,10 +6,10 @@ from housing.config.configuration import Configuration
 
 def main():
     try:
-        # pipeline = Pipeline()
-        # pipeline.run_pipeline()
-        data_validatin_config = Configuration().get_data_validation_config()
-        print(data_validatin_config)
+        pipeline = Pipeline()
+        pipeline.run_pipeline()
+        # data_validatin_config = Configuration().get_data_validation_config()
+        # print(data_validatin_config)
     except Exception as e:
         logging.error(f"{e}")
         print(e)
